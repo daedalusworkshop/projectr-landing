@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projectr</title>
+<meta name="description" content="Building the data model that lets a construction project understand itself. A construction data science research effort at Virginia Tech.">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #5a5a5a;
+    --rule: #d8d4cc;
+    --paper: #fbfaf7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', 'Iowan Old Style', serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px 96px;
+  }
+  header.site {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 28px 24px 0;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+  .hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 0 48px;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: normal;
+    letter-spacing: -0.01em;
+  }
+  .hero p.sub {
+    margin-top: 24px;
+    color: var(--muted);
+    font-size: 17px;
+    font-style: italic;
+  }
+  section {
+    padding: 56px 0;
+    border-top: 1px solid var(--rule);
+  }
+  h2 {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+  p { margin-bottom: 1.2em; }
+  p:last-child { margin-bottom: 0; }
+  .lede { font-size: 19px; }
+  a { color: var(--ink); }
+  .quiet-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--muted);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  form.signup {
+    margin-top: 28px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  form.signup input[type="email"] {
+    flex: 1 1 220px;
+    font: inherit;
+    font-size: 15px;
+    padding: 10px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: #fff;
+    color: var(--ink);
+  }
+  form.signup button {
+    font: inherit;
+    font-size: 15px;
+    padding: 10px 18px;
+    border: 1px solid var(--ink);
+    border-radius: 2px;
+    background: var(--ink);
+    color: var(--paper);
+    cursor: pointer;
+  }
+  .form-note {
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<header class="site">Projectr</header>
+<main>
+
+  <section class="hero" style="border-top: none;">
+    <h1>Building the data model that lets a construction project understand itself</h1>
+    <p class="sub">A construction data science research effort at Virginia Tech</p>
+  </section>
+
+  <section id="problem">
+    <h2>The Problem</h2>
+    <p class="lede">The record is not missing, but it is disconnected.</p>
+    <p>A construction project is delivered by dozens of companies that have never shared a system. Design, scheduling, cost, procurement, quality, safety, and correspondence each live somewhere different, each owned by a different party, each internally consistent and mutually blind.</p>
+    <p>We are under the impression that no one holds a completely accurate picture of the project at any given moment. Teams work from partial views assembled by hand, and progress outpaces the feedback needed to manage it. An RFI affects a submittal, the submittal affects a procurement date, the date affects a milestone, the milestone releases payment. This is a chain that is real, consequential, and recorded nowhere. It exists in the head of whoever happens to be holding it. Reconstructing it after the fact is the industry's accepted method for recovering information that was available all along.</p>
+  </section>
+
+  <section id="building">
+    <h2>What We're Building</h2>
+    <p>We are developing an ontology model for construction: a formal definition of the objects a project is made of, the states they move through, and the relationships between them.</p>
+    <p>That model is assembled from the documents teams already produce, specifications, contracts, RFIs, submittals, schedules, cost reports, daily reports, etc. and will serve as a connected, current picture of the project. It integrates with the systems teams already use rather than replacing them. The work connects applied research in document extraction, schema design, and graph analytics, and we are engineering it alongside the practitioners who would rely on it. A model that governs decisions of this consequence has to be correct before it is trusted, and getting that right is the work we are doing now.</p>
+    <a class="quiet-link" href="#">Learn more</a>
+  </section>
+
+  <section id="going">
+    <h2>Where This Is Going</h2>
+    <p>Construction is being digitized at the same moment it is losing the people who hold it together. Every year, experience leaves the industry faster than it is replaced, and what leaves is precisely the knowledge nothing writes down: how the pieces of a project connect, what a decision sets in motion, where the risk actually sits. Software has digitized the documents. It has not captured the reasoning.</p>
+    <p>We believe that reasoning can be modeled, and that a project able to explain its own state is the foundation the next generation of construction technology gets built on. That is what we are working toward.</p>
+  </section>
+
+  <section id="who">
+    <h2>Who We Are</h2>
+    <p>A research team at Virginia Tech working across design, construction, and data science. Names and credentials to be added.</p>
+  </section>
+
+  <section id="cta">
+    <h2>Stay in touch</h2>
+    <p>While we build, we publish what we're learning about construction data.</p>
+    <form class="signup" action="#">
+      <input type="email" name="email" placeholder="you@company.com" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="form-note">Signup not wired up yet; email <a href="mailto:tbmorgan@vt.edu">tbmorgan@vt.edu</a> in the meantime.</p>
+  </section>
+
+</main>
+<footer>
+  Projectr. A construction data science research effort at Virginia Tech.
+</footer>
+</body>
+</html>
